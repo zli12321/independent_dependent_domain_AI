@@ -1,0 +1,50 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   10 into depth [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT1 SATELLITE0
+        1: CALIBRATE SATELLITE0 INSTRUMENT1 GROUNDSTATION69
+        2: TURN_TO SATELLITE0 PLANET190 GROUNDSTATION69
+        3: TURN_TO SATELLITE2 STAR110 GROUNDSTATION18
+        4: TURN_TO SATELLITE3 GROUNDSTATION177 GROUNDSTATION23
+        5: TURN_TO SATELLITE4 STAR89 GROUNDSTATION172
+        6: TURN_TO SATELLITE8 STAR3 STAR29
+        7: TAKE_IMAGE SATELLITE0 PLANET190 INSTRUMENT1 SPECTROGRAPH1
+        8: TURN_TO SATELLITE0 STAR191 PLANET190
+        9: TAKE_IMAGE SATELLITE0 STAR191 INSTRUMENT1 SPECTROGRAPH1
+     
+
+time spent:    0.01 seconds instantiating 389884 easy, 0 hard action templates
+               0.04 seconds reachability analysis, yielding 2988 facts and 389884 actions
+               0.05 seconds creating final representation with 2988 relevant facts, 0 relevant fluents
+               0.45 seconds computing LNF
+               0.16 seconds building connectivity graph
+               0.46 seconds searching, evaluating 18 states, to a max depth of 1
+               1.17 seconds total time
+

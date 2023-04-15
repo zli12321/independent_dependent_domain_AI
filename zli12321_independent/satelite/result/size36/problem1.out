@@ -1,0 +1,60 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   16 into depth [1]
+                                  15            [1]
+                                  13            [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN_TO SATELLITE0 STAR7 STAR9
+        1: SWITCH_ON INSTRUMENT1 SATELLITE0
+        2: CALIBRATE SATELLITE0 INSTRUMENT1 STAR7
+        3: TURN_TO SATELLITE0 STAR36 STAR7
+        4: SWITCH_ON INSTRUMENT5 SATELLITE1
+        5: CALIBRATE SATELLITE1 INSTRUMENT5 GROUNDSTATION10
+        6: TURN_TO SATELLITE1 STAR37 GROUNDSTATION10
+        7: TURN_TO SATELLITE2 GROUNDSTATION25 GROUNDSTATION1
+        8: TURN_TO SATELLITE3 GROUNDSTATION3 GROUNDSTATION10
+        9: TURN_TO SATELLITE4 GROUNDSTATION8 STAR5
+       10: TURN_TO SATELLITE5 GROUNDSTATION32 GROUNDSTATION22
+       11: TURN_TO SATELLITE7 STAR30 GROUNDSTATION19
+       12: TURN_TO SATELLITE8 GROUNDSTATION1 GROUNDSTATION6
+       13: TAKE_IMAGE SATELLITE0 STAR36 INSTRUMENT1 INFRARED2
+       14: TAKE_IMAGE SATELLITE1 STAR37 INSTRUMENT5 THERMOGRAPH1
+     
+
+time spent:    0.00 seconds instantiating 18423 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 676 facts and 18423 actions
+               0.00 seconds creating final representation with 676 relevant facts, 0 relevant fluents
+               0.02 seconds computing LNF
+               0.01 seconds building connectivity graph
+               0.00 seconds searching, evaluating 17 states, to a max depth of 1
+               0.03 seconds total time
+

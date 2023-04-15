@@ -1,0 +1,50 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   13 into depth [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT7 SATELLITE0
+        1: CALIBRATE SATELLITE0 INSTRUMENT7 GROUNDSTATION37
+        2: TURN_TO SATELLITE0 STAR195 GROUNDSTATION37
+        3: TURN_TO SATELLITE1 GROUNDSTATION49 STAR122
+        4: TURN_TO SATELLITE2 STAR25 GROUNDSTATION128
+        5: TURN_TO SATELLITE3 GROUNDSTATION61 GROUNDSTATION119
+        6: TURN_TO SATELLITE8 GROUNDSTATION69 STAR5
+        7: TAKE_IMAGE SATELLITE0 STAR195 INSTRUMENT7 INFRARED2
+        8: TURN_TO SATELLITE0 PHENOMENON196 STAR195
+        9: TAKE_IMAGE SATELLITE0 PHENOMENON196 INSTRUMENT7 THERMOGRAPH3
+     
+
+time spent:    0.01 seconds instantiating 406664 easy, 0 hard action templates
+               0.04 seconds reachability analysis, yielding 3059 facts and 406664 actions
+               0.06 seconds creating final representation with 3059 relevant facts, 0 relevant fluents
+               0.47 seconds computing LNF
+               0.16 seconds building connectivity graph
+               0.56 seconds searching, evaluating 20 states, to a max depth of 1
+               1.30 seconds total time
+

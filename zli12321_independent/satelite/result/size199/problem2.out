@@ -1,0 +1,52 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   12 into depth [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT1 SATELLITE0
+        1: CALIBRATE SATELLITE0 INSTRUMENT1 STAR143
+        2: TURN_TO SATELLITE0 STAR199 STAR143
+        3: SWITCH_ON INSTRUMENT10 SATELLITE1
+        4: CALIBRATE SATELLITE1 INSTRUMENT10 GROUNDSTATION144
+        5: TURN_TO SATELLITE1 STAR200 GROUNDSTATION144
+        6: TURN_TO SATELLITE3 GROUNDSTATION71 STAR175
+        7: TURN_TO SATELLITE9 STAR1 GROUNDSTATION165
+        8: TAKE_IMAGE SATELLITE0 STAR199 INSTRUMENT1 INFRARED3
+        9: TAKE_IMAGE SATELLITE1 STAR200 INSTRUMENT10 THERMOGRAPH0
+       10: TURN_TO SATELLITE1 STAR103 STAR200
+     
+
+time spent:    0.02 seconds instantiating 431073 easy, 0 hard action templates
+               0.03 seconds reachability analysis, yielding 3153 facts and 431073 actions
+               0.08 seconds creating final representation with 3153 relevant facts, 0 relevant fluents
+               0.56 seconds computing LNF
+               0.18 seconds building connectivity graph
+               0.40 seconds searching, evaluating 17 states, to a max depth of 1
+               1.27 seconds total time
+

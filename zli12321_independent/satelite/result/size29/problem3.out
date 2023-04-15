@@ -1,0 +1,51 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   10 into depth [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT2 SATELLITE0
+        1: TURN_TO SATELLITE1 STAR26 STAR21
+        2: TURN_TO SATELLITE6 PHENOMENON29 GROUNDSTATION4
+        3: TURN_TO SATELLITE8 STAR12 GROUNDSTATION4
+        4: TURN_TO SATELLITE0 GROUNDSTATION16 STAR19
+        5: CALIBRATE SATELLITE0 INSTRUMENT2 GROUNDSTATION16
+        6: TURN_TO SATELLITE0 PHENOMENON29 GROUNDSTATION16
+        7: TAKE_IMAGE SATELLITE0 PHENOMENON29 INSTRUMENT2 SPECTROGRAPH3
+        8: TURN_TO SATELLITE0 PLANET30 PHENOMENON29
+        9: TAKE_IMAGE SATELLITE0 PLANET30 INSTRUMENT2 IMAGE2
+       10: TURN_TO SATELLITE0 STAR19 PLANET30
+     
+
+time spent:    0.00 seconds instantiating 12985 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 575 facts and 12985 actions
+               0.00 seconds creating final representation with 575 relevant facts, 0 relevant fluents
+               0.01 seconds computing LNF
+               0.01 seconds building connectivity graph
+               0.01 seconds searching, evaluating 28 states, to a max depth of 2
+               0.03 seconds total time
+

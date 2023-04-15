@@ -1,0 +1,50 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   10 into depth [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN_TO SATELLITE1 STAR81 GROUNDSTATION173
+        1: SWITCH_ON INSTRUMENT3 SATELLITE1
+        2: CALIBRATE SATELLITE1 INSTRUMENT3 STAR81
+        3: TURN_TO SATELLITE1 PHENOMENON176 STAR81
+        4: TURN_TO SATELLITE6 GROUNDSTATION132 STAR12
+        5: TURN_TO SATELLITE9 STAR111 STAR68
+        6: TAKE_IMAGE SATELLITE1 PHENOMENON176 INSTRUMENT3 IMAGE1
+        7: TURN_TO SATELLITE1 PHENOMENON177 PHENOMENON176
+        8: TAKE_IMAGE SATELLITE1 PHENOMENON177 INSTRUMENT3 IMAGE1
+        9: TURN_TO SATELLITE1 STAR140 PHENOMENON177
+     
+
+time spent:    0.01 seconds instantiating 335188 easy, 0 hard action templates
+               0.02 seconds reachability analysis, yielding 2774 facts and 335188 actions
+               0.06 seconds creating final representation with 2774 relevant facts, 0 relevant fluents
+               0.38 seconds computing LNF
+               0.14 seconds building connectivity graph
+               0.44 seconds searching, evaluating 20 states, to a max depth of 1
+               1.05 seconds total time
+

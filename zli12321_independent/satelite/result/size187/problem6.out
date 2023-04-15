@@ -1,0 +1,52 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   14 into depth [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT3 SATELLITE0
+        1: CALIBRATE SATELLITE0 INSTRUMENT3 STAR36
+        2: TURN_TO SATELLITE0 STAR187 STAR36
+        3: TURN_TO SATELLITE3 STAR180 STAR23
+        4: TURN_TO SATELLITE5 STAR72 GROUNDSTATION169
+        5: TURN_TO SATELLITE6 STAR16 STAR33
+        6: TURN_TO SATELLITE8 GROUNDSTATION39 GROUNDSTATION26
+        7: TAKE_IMAGE SATELLITE0 STAR187 INSTRUMENT3 IMAGE3
+        8: TURN_TO SATELLITE0 PLANET188 STAR187
+        9: TAKE_IMAGE SATELLITE0 PLANET188 INSTRUMENT3 INFRARED1
+       10: TURN_TO SATELLITE0 STAR73 PLANET188
+     
+
+time spent:    0.01 seconds instantiating 376940 easy, 0 hard action templates
+               0.03 seconds reachability analysis, yielding 2943 facts and 376940 actions
+               0.06 seconds creating final representation with 2943 relevant facts, 0 relevant fluents
+               0.43 seconds computing LNF
+               0.16 seconds building connectivity graph
+               0.59 seconds searching, evaluating 25 states, to a max depth of 1
+               1.28 seconds total time
+

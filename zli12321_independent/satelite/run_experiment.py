@@ -5,7 +5,7 @@ import time
 def exec(command):
     os.system(command)
 
-problem_size = [i+1 for i in range(0, 50)]
+problem_size = [i+1 for i in range(0, 200)]
 num_probs_per_size = 10
 
 print('start experimenting')

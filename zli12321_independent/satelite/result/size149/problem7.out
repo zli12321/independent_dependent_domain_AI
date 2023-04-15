@@ -1,0 +1,59 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   14 into depth [1]
+                                  13            [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN_TO SATELLITE0 GROUNDSTATION47 GROUNDSTATION120
+        1: TURN_TO SATELLITE0 GROUNDSTATION109 GROUNDSTATION47
+        2: TURN_TO SATELLITE3 GROUNDSTATION148 GROUNDSTATION128
+        3: TURN_TO SATELLITE6 GROUNDSTATION72 GROUNDSTATION65
+        4: TURN_TO SATELLITE7 STAR60 GROUNDSTATION90
+        5: TURN_TO SATELLITE9 GROUNDSTATION88 GROUNDSTATION101
+        6: SWITCH_ON INSTRUMENT1 SATELLITE0
+        7: TURN_TO SATELLITE1 STAR30 STAR67
+        8: CALIBRATE SATELLITE0 INSTRUMENT1 GROUNDSTATION109
+        9: TURN_TO SATELLITE0 PLANET149 GROUNDSTATION109
+       10: SWITCH_ON INSTRUMENT5 SATELLITE1
+       11: CALIBRATE SATELLITE1 INSTRUMENT5 STAR30
+       12: TURN_TO SATELLITE1 STAR150 STAR30
+       13: TAKE_IMAGE SATELLITE0 PLANET149 INSTRUMENT1 INFRARED3
+       14: TAKE_IMAGE SATELLITE1 STAR150 INSTRUMENT5 THERMOGRAPH2
+     
+
+time spent:    0.01 seconds instantiating 245087 easy, 0 hard action templates
+               0.02 seconds reachability analysis, yielding 2377 facts and 245087 actions
+               0.03 seconds creating final representation with 2377 relevant facts, 0 relevant fluents
+               0.29 seconds computing LNF
+               0.09 seconds building connectivity graph
+               0.64 seconds searching, evaluating 35 states, to a max depth of 2
+               1.08 seconds total time
+

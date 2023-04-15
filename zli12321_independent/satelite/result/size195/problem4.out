@@ -1,0 +1,50 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   10 into depth [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN_TO SATELLITE2 GROUNDSTATION174 GROUNDSTATION64
+        1: SWITCH_ON INSTRUMENT3 SATELLITE2
+        2: CALIBRATE SATELLITE2 INSTRUMENT3 GROUNDSTATION174
+        3: TURN_TO SATELLITE2 PHENOMENON195 GROUNDSTATION174
+        4: TURN_TO SATELLITE5 GROUNDSTATION139 GROUNDSTATION93
+        5: TURN_TO SATELLITE6 STAR175 GROUNDSTATION19
+        6: TURN_TO SATELLITE7 STAR170 STAR54
+        7: TURN_TO SATELLITE8 GROUNDSTATION114 STAR71
+        8: TURN_TO SATELLITE9 STAR77 GROUNDSTATION64
+        9: TAKE_IMAGE SATELLITE2 PHENOMENON195 INSTRUMENT3 IMAGE4
+     
+
+time spent:    0.01 seconds instantiating 413636 easy, 0 hard action templates
+               0.04 seconds reachability analysis, yielding 3081 facts and 413636 actions
+               0.06 seconds creating final representation with 3081 relevant facts, 0 relevant fluents
+               0.50 seconds computing LNF
+               0.17 seconds building connectivity graph
+               0.13 seconds searching, evaluating 11 states, to a max depth of 1
+               0.91 seconds total time
+

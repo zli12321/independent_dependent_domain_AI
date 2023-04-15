@@ -1,0 +1,62 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   15 into depth [1]
+                                  14            [1]
+                                  13            [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1][2]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: SWITCH_ON INSTRUMENT33 SATELLITE7
+        1: SWITCH_ON INSTRUMENT13 SATELLITE2
+        2: TURN_TO SATELLITE1 GROUNDSTATION4 STAR0
+        3: TURN_TO SATELLITE3 STAR1 STAR0
+        4: TURN_TO SATELLITE4 GROUNDSTATION4 GROUNDSTATION5
+        5: TURN_TO SATELLITE5 STAR1 STAR7
+        6: TURN_TO SATELLITE6 GROUNDSTATION4 STAR3
+        7: TURN_TO SATELLITE8 STAR3 GROUNDSTATION5
+        8: TURN_TO SATELLITE9 STAR1 STAR2
+        9: TURN_TO SATELLITE7 STAR2 PLANET6
+       10: CALIBRATE SATELLITE7 INSTRUMENT33 STAR2
+       11: TURN_TO SATELLITE7 PLANET6 STAR2
+       12: TAKE_IMAGE SATELLITE7 PLANET6 INSTRUMENT33 INFRARED3
+       13: TURN_TO SATELLITE2 STAR2 STAR7
+       14: CALIBRATE SATELLITE2 INSTRUMENT13 STAR2
+       15: TURN_TO SATELLITE2 STAR7 STAR2
+       16: TAKE_IMAGE SATELLITE2 STAR7 INSTRUMENT13 IMAGE0
+     
+
+time spent:    0.00 seconds instantiating 1667 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 228 facts and 1667 actions
+               0.00 seconds creating final representation with 228 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 40 states, to a max depth of 2
+               0.00 seconds total time
+
