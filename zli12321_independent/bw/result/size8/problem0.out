@@ -1,0 +1,60 @@
+
+ff: parsing domain file
+domain 'BLOCKS' defined
+ ... done.
+ff: parsing problem file
+problem 'PB0' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   13 into depth [1][2][3]
+                                  12            [1]
+                                  11            [1][2][3]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1][2]
+                                   5            [1][2][3][4]
+                                   4            [1][2]
+                                   2            [1][2]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: UNSTACK BLOCK1 BLOCK3
+        1: STACK BLOCK1 BLOCK5
+        2: UNSTACK BLOCK3 BLOCK8
+        3: PUT-DOWN BLOCK3
+        4: UNSTACK BLOCK1 BLOCK5
+        5: STACK BLOCK1 BLOCK8
+        6: UNSTACK BLOCK5 BLOCK7
+        7: STACK BLOCK5 BLOCK3
+        8: UNSTACK BLOCK7 BLOCK2
+        9: PUT-DOWN BLOCK7
+       10: UNSTACK BLOCK1 BLOCK8
+       11: STACK BLOCK1 BLOCK7
+       12: UNSTACK BLOCK8 BLOCK4
+       13: STACK BLOCK8 BLOCK2
+       14: UNSTACK BLOCK4 BLOCK6
+       15: STACK BLOCK4 BLOCK5
+       16: UNSTACK BLOCK8 BLOCK2
+       17: STACK BLOCK8 BLOCK4
+       18: PICK-UP BLOCK6
+       19: STACK BLOCK6 BLOCK2
+     
+
+time spent:    0.00 seconds instantiating 144 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 89 facts and 144 actions
+               0.00 seconds creating final representation with 89 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 59 states, to a max depth of 4
+               0.00 seconds total time
+

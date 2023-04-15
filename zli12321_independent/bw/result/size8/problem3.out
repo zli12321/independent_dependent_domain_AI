@@ -1,0 +1,59 @@
+
+ff: parsing domain file
+domain 'BLOCKS' defined
+ ... done.
+ff: parsing problem file
+problem 'PB3' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   12 into depth [1]
+                                  11            [1][2][3]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2][3]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1][2][3][4]
+                                   4            [1][2]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: PICK-UP BLOCK2
+        1: STACK BLOCK2 BLOCK7
+        2: PICK-UP BLOCK5
+        3: STACK BLOCK5 BLOCK8
+        4: UNSTACK BLOCK2 BLOCK7
+        5: STACK BLOCK2 BLOCK5
+        6: UNSTACK BLOCK1 BLOCK4
+        7: STACK BLOCK1 BLOCK7
+        8: UNSTACK BLOCK4 BLOCK3
+        9: STACK BLOCK4 BLOCK2
+       10: UNSTACK BLOCK3 BLOCK6
+       11: STACK BLOCK3 BLOCK4
+       12: UNSTACK BLOCK1 BLOCK7
+       13: STACK BLOCK1 BLOCK6
+       14: UNSTACK BLOCK3 BLOCK4
+       15: STACK BLOCK3 BLOCK1
+       16: PICK-UP BLOCK7
+       17: STACK BLOCK7 BLOCK4
+     
+
+time spent:    0.00 seconds instantiating 144 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 89 facts and 144 actions
+               0.00 seconds creating final representation with 89 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 68 states, to a max depth of 4
+               0.00 seconds total time
+

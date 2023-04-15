@@ -1,0 +1,126 @@
+
+ff: parsing domain file
+domain 'BLOCKS' defined
+ ... done.
+ff: parsing problem file
+problem 'PB5' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   30 into depth [1]
+                                  29            [1]
+                                  28            [1][2]
+                                  27            [1][2][3][4][5][6][7]
+                                  26            [1][2]
+                                  25            [1]
+                                  24            [1]
+                                  23            [1][2][3]
+                                  22            [1]
+                                  21            [1][2][3][4]
+                                  20            [1]
+                                  19            [1][2][3][4][5][6]
+                                  18            [1][2]
+                                  17            [1][2][3][4][5][6][7][8][9][10][11][12]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1][2][3]
+                                  13            [1][2][3]
+                                  12            [1][2][3][4][5][6][7][8][9]
+                                  11            [1][2][3]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1][2]
+                                   3            [1][2][3][4]
+                                   2            [1][2]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: UNSTACK BLOCK7 BLOCK9
+        1: PUT-DOWN BLOCK7
+        2: PICK-UP BLOCK14
+        3: STACK BLOCK14 BLOCK9
+        4: UNSTACK BLOCK5 BLOCK10
+        5: STACK BLOCK5 BLOCK7
+        6: UNSTACK BLOCK14 BLOCK9
+        7: STACK BLOCK14 BLOCK5
+        8: UNSTACK BLOCK10 BLOCK2
+        9: STACK BLOCK10 BLOCK9
+       10: UNSTACK BLOCK2 BLOCK6
+       11: PUT-DOWN BLOCK2
+       12: UNSTACK BLOCK6 BLOCK15
+       13: STACK BLOCK6 BLOCK14
+       14: UNSTACK BLOCK15 BLOCK11
+       15: PUT-DOWN BLOCK15
+       16: UNSTACK BLOCK6 BLOCK14
+       17: STACK BLOCK6 BLOCK10
+       18: UNSTACK BLOCK4 BLOCK12
+       19: STACK BLOCK4 BLOCK15
+       20: UNSTACK BLOCK11 BLOCK3
+       21: STACK BLOCK11 BLOCK12
+       22: UNSTACK BLOCK14 BLOCK5
+       23: STACK BLOCK14 BLOCK11
+       24: UNSTACK BLOCK5 BLOCK7
+       25: STACK BLOCK5 BLOCK6
+       26: PICK-UP BLOCK3
+       27: STACK BLOCK3 BLOCK7
+       28: UNSTACK BLOCK14 BLOCK11
+       29: STACK BLOCK14 BLOCK3
+       30: UNSTACK BLOCK5 BLOCK6
+       31: STACK BLOCK5 BLOCK14
+       32: UNSTACK BLOCK6 BLOCK10
+       33: STACK BLOCK6 BLOCK5
+       34: UNSTACK BLOCK10 BLOCK9
+       35: STACK BLOCK10 BLOCK6
+       36: UNSTACK BLOCK9 BLOCK16
+       37: STACK BLOCK9 BLOCK11
+       38: UNSTACK BLOCK10 BLOCK6
+       39: STACK BLOCK10 BLOCK9
+       40: UNSTACK BLOCK6 BLOCK5
+       41: STACK BLOCK6 BLOCK10
+       42: UNSTACK BLOCK16 BLOCK1
+       43: STACK BLOCK16 BLOCK6
+       44: UNSTACK BLOCK5 BLOCK14
+       45: STACK BLOCK5 BLOCK16
+       46: UNSTACK BLOCK1 BLOCK8
+       47: STACK BLOCK1 BLOCK14
+       48: UNSTACK BLOCK8 BLOCK13
+       49: STACK BLOCK8 BLOCK2
+       50: UNSTACK BLOCK5 BLOCK16
+       51: STACK BLOCK5 BLOCK13
+       52: UNSTACK BLOCK16 BLOCK6
+       53: STACK BLOCK16 BLOCK8
+       54: UNSTACK BLOCK1 BLOCK14
+       55: STACK BLOCK1 BLOCK6
+       56: UNSTACK BLOCK5 BLOCK13
+       57: STACK BLOCK5 BLOCK1
+       58: UNSTACK BLOCK4 BLOCK15
+       59: STACK BLOCK4 BLOCK13
+       60: UNSTACK BLOCK14 BLOCK3
+       61: STACK BLOCK14 BLOCK5
+       62: UNSTACK BLOCK4 BLOCK13
+       63: STACK BLOCK4 BLOCK15
+       64: PICK-UP BLOCK13
+       65: STACK BLOCK13 BLOCK3
+       66: UNSTACK BLOCK4 BLOCK15
+       67: STACK BLOCK4 BLOCK13
+     
+
+time spent:    0.00 seconds instantiating 544 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 305 facts and 544 actions
+               0.00 seconds creating final representation with 305 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               1.27 seconds searching, evaluating 58353 states, to a max depth of 12
+               1.27 seconds total time
+

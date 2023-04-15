@@ -1,0 +1,48 @@
+
+ff: parsing domain file
+domain 'BLOCKS' defined
+ ... done.
+ff: parsing problem file
+problem 'PB2' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   47 into depth [1][2]
+                                  45            [1][2][3]
+                                  44            [1][2][3][4][5][6]
+                                  43            [1][2][3][4][5][6][7][8][9][10][11][12][13][14]
+                                  42            [1][2]
+                                  41            [1][2][3][4][5][6][7][8][9]
+                                  40            [1]
+                                  39            [1]
+                                  38            [1]
+                                  37            [1]
+                                  36            [1][2][3]
+                                  35            [1]
+                                  34            [1][2]
+                                  32            [1][2][3][4][5][6]
+                                  30            [1]
+                                  29            [1]
+                                  28            [1]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1]
+                                  24            [1][2]
+                                  22            [1][2][3]
+                                  21            [1][2][3]
+                                  20            [1]
+                                  19            [1][2]
+                                  18            [1][2][3]
+                                  17            [1][2][3][4][5][6][7][8][9][10]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1]
+                                  12            [1][2][3][4][5][6][7][8][9][10][11][12]
